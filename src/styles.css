@@ -4,4 +4,85 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: oblique;
     font-size: large;
+    overflow: hidden; /*prevents scrolling */
+}
+
+.left-body{
+    width: 40%; /* how much of the screen it takes */
+    background-color: black;
+    padding: 20px; /* padding around the content */
+    box-sizing: border-box; /* makes sure the padding is included in the width */
+    overflow-y: auto; /* allows vertical scrolling if content overflows */
+}
+
+.right-body{
+    width: 60%; /* how much of the screen it takes */
+    background-color: black;
+    padding: 20px; /* padding around the content */
+    box-sizing: border-box; /* makes sure the padding is included in the width */
+    overflow-y: auto; /* allows vertical scrolling if content overflows */
+}
+.side-body{
+    width: 50%; /* how much of the screen it takes */
+    background-color: black;
+    padding: 20px; /* padding around the content */
+    box-sizing: border-box; /* makes sure the padding is included in the width */
+    overflow-y: auto; /* allows vertical scrolling if content overflows */
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh; /* full viewport height */
+    width: 100vw; /* full viewport width */
+}
+
+.nav-bar{
+    align-items: flex-start; /* centers items vertically */
+    background-color: black;
+    padding: 0px 0px; /*padding around nav bar*/
+}
+
+.nav-links{
+    display: flex;
+    list-style: none; /* removes bullet points */
+}
+
+.nav-links li{
+    padding: 0 20px; /* space between links */
+}
+
+.nav-links a{
+    color: rgb(0, 140, 255);
+}
+
+.clickable-card{
+    display: block; /* makes card clickable */
+    text-decoration: none; /* removes underline from links */
+    color: white; /* text color */
+    background-color: black; /* card background color */
+    border: 2px solid transparent; /* card border */
+    transition: border 0.3s; /*smooth transistion when hovering*/
+    border-radius: 32px; /*rounds corners from a radius of 8px*/
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.clickable-card:hover{
+    border: 2px solid white;
+}
+
+.clickable-card ul{
+    display: flex;
+    gap: 10px; /*space between items*/
+    list-style: none; /*no bullets*/
+    padding: 0; /*space inside */
+    margin: 0; /*space outside */
+}
+
+.clickable-card li{
+    margin: 0;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 8px;
 }
