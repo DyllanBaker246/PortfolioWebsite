@@ -21,7 +21,9 @@ body {
     padding: 20px; /* padding around the content */
     box-sizing: border-box; /* makes sure the padding is included in the width */
     overflow-y: auto; /* allows vertical scrolling if content overflows */
+    padding-bottom: 100px;
 }
+
 .side-body{
     width: 50%; /* how much of the screen it takes */
     background-color: black;
@@ -62,6 +64,7 @@ body {
     background-color: black; /* card background color */
     border: 2px solid transparent; /* card border */
     transition: border 0.3s; /*smooth transistion when hovering*/
+    transition: background 0.3s;
     border-radius: 32px; /*rounds corners from a radius of 8px*/
     flex-direction: column;
     align-items: flex-start;
@@ -70,6 +73,7 @@ body {
 
 .clickable-card:hover{
     border: 2px solid white;
+    background-color: grey;
 }
 
 .clickable-card ul{
@@ -86,3 +90,4 @@ body {
     padding: 5px;
     border-radius: 8px;
 }
+
