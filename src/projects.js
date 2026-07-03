@@ -19,6 +19,13 @@ class Project{
     }
 }
 
+const mouseEffect = document.getElementById("mouse-effect");
+
+document.addEventListener("mousemove", (e) => {
+    mouseEffect.style.left = e.clientX + "px";
+    mouseEffect.style.top = e.clientY + "px";
+});
+
 const testProj = new Project("title", "lorem emsum", ["meow", "meow"]);
 const testProj2 = new Project(
     "title2",
