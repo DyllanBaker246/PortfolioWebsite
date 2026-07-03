@@ -19,17 +19,15 @@ class Project{
     }
 }
 
-const mouseEffect = document.getElementById("mouse-effect");
-
-document.addEventListener("mousemove", (e) => {
-    mouseEffect.style.left = e.clientX + "px";
-    mouseEffect.style.top = e.clientY + "px";
-});
-
-const testProj = new Project("title", "lorem emsum", ["meow", "meow"]);
+const certificateAuthority = new Project(
+    "Certificate Authority",
+    "lorem emsum",
+    ["meow", "meow"]);
 const testProj2 = new Project(
     "title2",
     "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
     ["bark", "bark"]);
-document.getElementById("project 1").innerHTML = testProj.displayCard();
+
+
+document.getElementById("Certificate Authority").innerHTML = certificateAuthority.displayCard();
 document.getElementById("project 2").innerHTML = testProj2.displayCard();
