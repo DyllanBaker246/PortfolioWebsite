@@ -1,0 +1,14 @@
+[
+    {
+        "id": "certificate-authority",
+        "title": "Certificate Authority",
+        "shortDescription": "PKI system built in Java.",
+        "image": "images/ca.png"
+    },
+    {
+        "id": "portfolio",
+        "title": "Portfolio Website",
+        "shortDescription": "My personal portfolio.",
+        "image": "images/portfolio.png"
+    }
+]
