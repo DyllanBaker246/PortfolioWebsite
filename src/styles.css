@@ -115,3 +115,33 @@ body {
     transition: transform 0.1s ease-out;
     z-index: -1;
 }
+
+/* Target single-line inputs */
+input[type="text"] {
+  /* Box properties */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box; /* Includes padding in width */
+
+  /* Borders & Corners */
+  border: 2px solid #2D525A;
+  border-radius: 4px;
+
+  /* Typography */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  color: #ecfeff;
+
+  /* Background */
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  border-color: #06B6D4; /* Green border */
+  outline: none; /* Removes default browser outline */
+  background-color: transparent;
+}
+
+
+
