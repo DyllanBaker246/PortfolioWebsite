@@ -4,7 +4,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: oblique;
     font-size: large;
-    overflow: hidden; /*prevents scrolling */
+    overflow: hidden; /*prevents scrolling*/
 }
 
 .left-body{
@@ -12,8 +12,11 @@ body {
     background-color: transparent;
     padding: 20px; /* padding around the content */
     box-sizing: border-box; /* makes sure the padding is included in the width */
-    overflow-y: auto; /* allows vertical scrolling if content overflows */
-    overflow: hidden; /*prevents scrolling */
+    /*overflow-y: auto; /* allows vertical scrolling if content overflows*/
+    overflow: hidden; /*prevents scrolling*/
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .right-body{
@@ -21,22 +24,32 @@ body {
     background-color: transparent;
     padding: 20px; /* padding around the content */
     box-sizing: border-box; /* makes sure the padding is included in the width */
-    overflow-y: auto; /* allows vertical scrolling if content overflows */
+    overflow-y: auto; /*allows vertical scrolling if content overflows*/
+    overflow: auto;
+    position: sticky;
     padding-bottom: 100px;
-}
-
-.side-body{
-    width: 50%; /* how much of the screen it takes */
-    background-color: black;
-    padding: 20px; /* padding around the content */
-    box-sizing: border-box; /* makes sure the padding is included in the width */
-    overflow-y: auto; /* allows vertical scrolling if content overflows */
 }
 
 .wrapper{
     display: flex;
+    /*flex-direction: row; /* aligns boxes horizontally */
     height: 100vh; /* full viewport height */
-    width: 100vw; /* full viewport width */
+    /*min-height: 100vw;  full viewport width */
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        display: block; /* switched to vertical at 768px width */
+    }
+    body{
+        overflow: auto;
+    }
+    .left-body, .right-body{
+        width: 100%;
+        height: auto;
+        position: static;
+        overflow: visible;
+    }
 }
 
 .nav-bar{

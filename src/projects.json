@@ -4,7 +4,7 @@
     "title": "Portfolio Website",
     "description": "A personal portfolio website built with HTML, CSS, and JavaScript.",
     "skills": ["HTML", "CSS", "JavaScript", "Web Dev"],
-    "link": ""
+    "link": "/src/Projects/portfolioWebsite.html"
   },
   {
     "title": "Certificate Authority",
@@ -15,7 +15,8 @@
   {
     "title": "Virtual Private Network",
     "description": "Secured a connection between two devices using an encrypted tunnel.",
-    "skills": ["WireGuard", "Linux"]
+    "skills": ["WireGuard", "Linux"],
+    "link": "/src/Projects/virtualPrivateNetwork.html"
   },
   {
     "title": "Passwordless SSH",
