@@ -1,0 +1,40 @@
+
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website built with HTML, CSS, and JavaScript.",
+    "skills": ["HTML", "CSS", "JavaScript", "Web Dev"],
+    "link": ""
+  },
+  {
+    "title": "Certificate Authority",
+    "description": "Created a Certificate Authority that issues certificates to Apache, Microsoft IIS, and Node.js web servers.",
+    "skills": ["PKI", "Digital Signatures", "X.509", "Certificate Chains", "Apache", "Node.js"],
+    "link": "/src/Projects/cerficateAuthority.html"
+  },
+  {
+    "title": "Virtual Private Network",
+    "description": "Secured a connection between two devices using an encrypted tunnel.",
+    "skills": ["WireGuard", "Linux"]
+  },
+  {
+    "title": "Passwordless SSH",
+    "description": "Set up a passwordless SSH into a Linux system using public key cryptography",
+    "skills": [["SSH", "Public Key Cryptography", "Linux"]]
+  },
+  {
+    "title": "IPSec Channel",
+    "description": "lorem emsum",
+    "skills": ["meow", "meow"]
+  },
+  {
+    "title": "Pretty Good Privacy",
+    "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
+    "skills": ["bark", "bark"]
+  },
+  {
+    "title": "DNSSEC-Based DNS Server",
+    "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
+    "skills": ["bark", "bark"]
+  }
+]
