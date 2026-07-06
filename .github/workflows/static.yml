@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir -p public
           cp index.html public/
-          cp -r *.css *.js images assets public/ 2>/dev/null || true
+          cp -r images assets public/ 2>/dev/null || true
           ls -la public
 
       - name: Setup Pages
