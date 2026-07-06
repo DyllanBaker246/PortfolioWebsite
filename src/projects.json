@@ -21,21 +21,25 @@
   {
     "title": "Passwordless SSH",
     "description": "Set up a passwordless SSH into a Linux system using public key cryptography",
-    "skills": [["SSH", "Public Key Cryptography", "Linux"]]
+    "skills": [["SSH", "Public Key Cryptography", "Linux"]],
+    "link": "src/Projects/passwordlessSsh.html"
   },
   {
     "title": "IPSec Channel",
     "description": "lorem emsum",
-    "skills": ["meow", "meow"]
+    "skills": ["meow", "meow"],
+    "link": "src/Projects/ipsecChannel.html"
   },
   {
     "title": "Pretty Good Privacy",
     "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
-    "skills": ["bark", "bark"]
+    "skills": ["bark", "bark"],
+    "link": "src/Projects/prettyGoodPrivacy.html"
   },
   {
     "title": "DNSSEC-Based DNS Server",
     "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
-    "skills": ["bark", "bark"]
+    "skills": ["bark", "bark"],
+    "link": "src/Projects/dnssecBasedDnsServer.html"
   }
 ]

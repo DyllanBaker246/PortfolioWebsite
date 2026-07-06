@@ -7,6 +7,11 @@ body {
     overflow: hidden; /*prevents scrolling*/
 }
 
+html {
+  scrollbar-width: thin;          /* Options: auto | thin | none */
+  scrollbar-color: #2D525A transparent; /* thumb_color track_color */
+}
+
 .left-body{
     width: 40%; /* how much of the screen it takes */
     background-color: transparent;
@@ -107,6 +112,23 @@ body {
     border-radius: 8px;
 }
 
+.skill-list{
+    display: flex;
+    gap: 10px; /*space between items*/
+    list-style: none; /*no bullets*/
+    padding: 0; /*space inside */
+    margin: 0; /*space outside */
+    flex-wrap: wrap;
+}
+
+.skill-list li{
+    font-size: 0.9rem;
+    margin: 0;
+    background-color: #2D525A;
+    padding: 5px;
+    border-radius: 8px;
+}
+
 .nameHeader{
     font-size: 50px;
 }
@@ -200,4 +222,6 @@ input[type="text"]:focus {
 
     
 }
+
+
 

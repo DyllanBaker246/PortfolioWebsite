@@ -74,6 +74,32 @@ function displayProjects(projects) {
     });
 }
 
+function setupProjectSearch() {
+    const searchInput = document.getElementById("project-search");
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", () => {
+        const searchText = searchInput.value.toLowerCase();
+
+        const filteredProjects = projects.filter(project => {
+            const titleMatch = String(project.title)
+                .toLowerCase()
+                .includes(searchText);
+
+            const skillMatch = project.skills.some(skill =>
+                String(skill)
+                    .toLowerCase()
+                    .includes(searchText)
+            );
+
+            return titleMatch || skillMatch;
+        });
+
+        displayProjects(filteredProjects);
+    });
+}
+
 async function loadProjects() {
     const jsonPath = window.location.pathname.endsWith("projects.html")
     ? "../../src/projects.json"
@@ -97,6 +123,7 @@ const response = await fetch(jsonPath);
 
     displayProjects(projects);
     displayProjectsHome(projects);
+    setupProjectSearch();
 }
 
 
