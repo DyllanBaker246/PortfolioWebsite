@@ -181,13 +181,13 @@ input[type="text"]:focus {
         display: flex;
         flex-wrap: wrap;
         gap: 4px;
-        font-size: small;
+        font-size: medium;
         justify-content: flex-start;
         padding-left: 0;
         margin-left: 0;
     }
     .nav-links li {
-        padding: 0 4px;
+        padding: 0 20px;
     }
 
     .nav-links .divider {
