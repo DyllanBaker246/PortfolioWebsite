@@ -29,7 +29,7 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p public
-          cp index.html public/
+          rsync -av --exclude='.git' --exclude='.github' ./ public/
           ls -la public
 
       - name: Setup Pages
