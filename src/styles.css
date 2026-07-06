@@ -25,7 +25,7 @@ body {
     padding: 20px; /* padding around the content */
     box-sizing: border-box; /* makes sure the padding is included in the width */
     overflow-y: auto; /*allows vertical scrolling if content overflows*/
-    overflow: auto;
+    overflow-x: hidden;
     position: sticky;
     padding-bottom: 100px;
 }
@@ -39,10 +39,14 @@ body {
 
 @media screen and (max-width: 800px){
     .wrapper{
-        display: block; /* switched to vertical at 768px width */
+        display: block;  /*switched to vertical at 768px width */
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
-    body{
-        overflow-y: auto;
+    html, body{
+        width: 100%;
+        max-width: 100%;
         overflow-x: hidden;
         /* max-width: 100%; */
     }
