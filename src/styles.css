@@ -37,7 +37,7 @@ body {
     /*min-height: 100vw;  full viewport width */
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 393px){
     .wrapper{
         display: block; /* switched to vertical at 768px width */
     }
