@@ -37,12 +37,14 @@ body {
     /*min-height: 100vw;  full viewport width */
 }
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 800px){
     .wrapper{
         display: block; /* switched to vertical at 768px width */
     }
     body{
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        /* max-width: 100%; */
     }
     .left-body, .right-body{
         width: 100%;
