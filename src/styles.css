@@ -37,27 +37,6 @@ body {
     /*min-height: 100vw;  full viewport width */
 }
 
-@media screen and (max-width: 800px){
-    .wrapper{
-        display: block;  /*switched to vertical at 768px width */
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    html, body{
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-        /* max-width: 100%; */
-    }
-    .left-body, .right-body{
-        width: 100%;
-        height: auto;
-        position: static;
-        overflow: visible;
-    }
-}
-
 .nav-bar{
     align-items: flex-start; /* centers items vertically */
     background-color: transparent;
@@ -173,5 +152,52 @@ input[type="text"]:focus {
   background-color: transparent;
 }
 
+@media screen and (max-width: 800px){
+    .wrapper{
+        display: block;  /*switched to vertical at 768px width */
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    html, body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        /* max-width: 100%; */
+    }
+    .left-body, .right-body{
+        width: 100%;
+        height: auto;
+        position: static;
+        overflow: visible;
+    }
 
+    /* .nav-bar {
+        margin-bottom: 30px;
+        font-size: xx-small;
+        flex-wrap: wrap;
+    } */
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        font-size: small;
+        justify-content: flex-start;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .nav-links li {
+        padding: 0 4px;
+    }
+
+    .nav-links .divider {
+        padding: 0 2px;
+    }
+
+    .nav-bar {
+        margin-left: 0;
+    }
+
+    
+}
 
