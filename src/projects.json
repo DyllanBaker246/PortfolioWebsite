@@ -4,13 +4,13 @@
     "title": "Portfolio Website",
     "description": "A personal portfolio website built with HTML, CSS, and JavaScript.",
     "skills": ["HTML", "CSS", "JavaScript", "Web Dev"],
-    "link": "portfolioWebsite.html"
+    "link": "src/Projects/portfolioWebsite.html"
   },
   {
     "title": "Certificate Authority",
     "description": "Created a Certificate Authority that issues certificates to Apache, Microsoft IIS, and Node.js web servers.",
     "skills": ["PKI", "Digital Signatures", "X.509", "Certificate Chains", "Apache", "Node.js"],
-    "link": "/src/Projects/cerficateAuthority.html"
+    "link": "src/Projects/cerficateAuthority.html"
   },
   {
     "title": "Virtual Private Network",

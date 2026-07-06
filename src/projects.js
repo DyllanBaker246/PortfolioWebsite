@@ -60,8 +60,10 @@ function displayProjects(projects) {
             .map(skill => `<li>${skill}</li>`)
             .join("");
 
+        const updatedLink = project.link.slice(13); /* removes src/Projects/ */
+
         container.innerHTML += `
-            <a href="${project.link}" class="clickable-card">
+            <a href="${updatedLink}" class="clickable-card">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
                 <ul>
