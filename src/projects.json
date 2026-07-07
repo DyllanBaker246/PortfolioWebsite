@@ -21,13 +21,13 @@
   {
     "title": "Passwordless SSH",
     "description": "Set up a passwordless SSH into a Linux system using public key cryptography",
-    "skills": [["SSH", "Public Key Cryptography", "Linux"]],
+    "skills": ["SSH", "Public Key Cryptography", "Linux"],
     "link": "src/Projects/passwordlessSsh.html"
   },
   {
     "title": "IPSec Channel",
-    "description": "lorem emsum",
-    "skills": ["meow", "meow"],
+    "description": "Created a secure, private connection to send data safely over a public network",
+    "skills": ["Strong Swan", "UDP 500", "UDP 4500"],
     "link": "src/Projects/ipsecChannel.html"
   },
   {
