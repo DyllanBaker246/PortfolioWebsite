@@ -32,14 +32,8 @@
   },
   {
     "title": "Pretty Good Privacy",
-    "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
-    "skills": ["bark", "bark"],
+    "description": "Created a secure Email communication using end-to-end encryption and digital signatures.", 
+    "skills": ["Public Key Cryptography", "Key Management", "Thunderbird", "GPG"],
     "link": "src/Projects/prettyGoodPrivacy.html"
-  },
-  {
-    "title": "DNSSEC-Based DNS Server",
-    "description": "lorem emsumjsdhfjksd jlksdjf lksdjflksdjf sbfdkhsd kjhdfskd jrhfjkdsfhkdgfjfhkjdf,fj", 
-    "skills": ["bark", "bark"],
-    "link": "src/Projects/dnssecBasedDnsServer.html"
   }
 ]
