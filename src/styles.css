@@ -230,5 +230,33 @@ input[type="text"]:focus {
     
 }
 
+.shelf{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    align-content: flex-start; /* fixes the huge vertical gap */
+
+    background: linear-gradient(to bottom, transparent 20vh, blue 20vh, brown 30vh);
+    background-size: 100% 30vh; 
+    row-gap: 9vh;
+    padding: 20px;
+}
+
+.book{
+    width: 2vw;
+    height: 21vh;
+    background-color: purple;
+    transition: 0.2s;
+    display: flex;
+    border-color: green;
+    border-radius: 10%;
+}
+
+.book:hover{
+    transform: translateY(-5px);
+}
+
 
 
