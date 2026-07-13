@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #0b1315;
     color: #ecfeff;
@@ -34,6 +36,7 @@ html {
     overflow-x: hidden;
     position: sticky;
     padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .wrapper{
@@ -238,24 +241,42 @@ input[type="text"]:focus {
     width: 100%;
     align-content: flex-start; /* fixes the huge vertical gap */
 
-    background: linear-gradient(to bottom, transparent 20vh, blue 20vh, brown 30vh);
-    background-size: 100% 30vh; 
-    row-gap: 9vh;
+    background: linear-gradient(to bottom, transparent 42vh, #3E291D 42vh, #7A5A44 50vh);
+    background-size: 100% 50vh; 
+    row-gap: 8vh;
     padding: 20px;
 }
 
 .book{
-    width: 2vw;
-    height: 21vh;
-    background-color: purple;
-    transition: 0.2s;
     display: flex;
-    border-color: green;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    color: var(--text-color);
+    width: 50px;
+    height: var(--book-height);
+    background: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--book-color) 85%, white),
+        var(--book-color),
+        color-mix(in srgb, var(--book-color) 80%, black)
+    );
+    border: 5px solid var(--border-color);
+    transition: 0.2s;
     border-radius: 10%;
+    transform: translateY(var(--height-diff));
+}
+
+.book h1 {
+    margin: 0;
+    display: inline-block; /* Required if your element is natively inline */
+    transform: rotate(90deg); /* 90deg turns clockwise, -90deg turns counter-clockwise */
+    transform-origin: center; /* Changes the pivot point of the spin */
 }
 
 .book:hover{
-    transform: translateY(-5px);
+    transform: translateY(calc(var(--height-diff) + -3vh));
 }
 
 

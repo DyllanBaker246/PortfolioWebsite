@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Dune",
+    "rating": "9.6",
+    "plot": "9",
+    "pacing": "8",
+    "characters":"9",
+    "worldBuilding":"10",
+    "logic":"9",
+    "total":"48",
+    "link": "src/Projects/portfolioWebsite.html"
+  },
+  {
+    "title": "Dune: Messiah",
+    "rating": "7.8",
+    "plot": "8",
+    "pacing": "7",
+    "characters":"7",
+    "worldBuilding":"9",
+    "logic":"8",
+    "total":"39",
+    "link": "src/Projects/portfolioWebsite.html"
+  },
+  {
+    "title": "Mechanicum",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "src/Projects/portfolioWebsite.html"
+  }
+
+]
