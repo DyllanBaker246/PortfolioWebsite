@@ -8,7 +8,7 @@
     "worldBuilding":"10",
     "logic":"9",
     "total":"48",
-    "link": "src/Projects/portfolioWebsite.html"
+    "link": "./BookReviews/dune.html"
   },
   {
     "title": "Dune: Messiah",
@@ -19,7 +19,7 @@
     "worldBuilding":"9",
     "logic":"8",
     "total":"39",
-    "link": "src/Projects/portfolioWebsite.html"
+    "link": "./BookReviews/messiah.html"
   },
   {
     "title": "Mechanicum",
@@ -30,7 +30,7 @@
     "worldBuilding":"5",
     "logic":"6",
     "total":"23",
-    "link": "src/Projects/portfolioWebsite.html"
+    "link": "./BookReviews/mechanicum.html"
   }
 
 ]

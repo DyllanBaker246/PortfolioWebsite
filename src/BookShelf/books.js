@@ -72,6 +72,7 @@ const response = await fetch(jsonPath);
     });
 
     displaybooks(books);
+    setupBookSearch(books);
 }
 
 loadBooks();
@@ -101,8 +102,34 @@ function displaybooks(books) {
             --book-height: ${height};
             --height-diff: ${heightDiff};
             ">
-                <h1>${book.title}</h1>
+                <h3>${book.title}</h3>
             </a>
         `;
+    });
+}
+
+function setupBookSearch() {
+    const searchInput = document.getElementById("book-search");
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", () => {
+        const searchText = searchInput.value.toLowerCase();
+
+        const filteredBooks = books.filter(book => {
+            const titleMatch = String(book.title)
+                .toLowerCase()
+                .includes(searchText);
+
+            // const skillMatch = project.skills.some(skill =>
+            //     String(skill)
+            //         .toLowerCase()
+            //         .includes(searchText)
+            // );
+
+            return titleMatch;
+        });
+
+        displaybooks(filteredBooks);
     });
 }
