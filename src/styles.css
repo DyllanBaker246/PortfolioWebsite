@@ -242,14 +242,15 @@ input[type="text"]:focus {
     min-height: 100vh;
     width: 100%;
     align-content: flex-start; /* fixes the huge vertical gap */
-
+    
     background: linear-gradient(to bottom, transparent 42vh, #3E291D 42vh, #7A5A44 50vh);
     background-size: 100% 50vh; 
     row-gap: 8vh;
-    padding: 20px;
+    padding: 40px;
 }
 
 .book{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,6 +284,40 @@ input[type="text"]:focus {
 
 .book:hover{
     transform: translateY(calc(var(--height-diff) + -3vh));
+    overflow: visible;
+    z-index:9909;
+}
+
+/* .popup-box.active{
+    display: block;
+} */
+
+.popup-box {
+  display: none;
+  position: fixed;
+  
+  top:25%;
+  left:25%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* margin-left: 10px; */
+  
+  /* --- Set your custom larger sizing here --- */
+  width: 30vw;         /* Forces the box to be 300px wide */
+  height: 30vh;
+  min-height: 150px;   /* Ensures a minimum height, but allows growth if text overflows */
+  
+  background-color: tan;
+  border: 10px solid var(--book-color);
+  /* border: 10px solid var(--book-color); */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 99999;
+
+  white-space: normal;
+
+  pointer-events: none;
 }
 
 

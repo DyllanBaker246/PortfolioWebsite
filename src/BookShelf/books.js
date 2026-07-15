@@ -82,6 +82,9 @@ function displaybooks(books) {
 
     if (!container) return;
 
+    // Grab your global popup that sits inside .right-body
+    const globalPopup = document.querySelector('.right-body .popup-box');
+
     container.innerHTML = "";
 
     books.forEach(book => {
@@ -93,8 +96,15 @@ function displaybooks(books) {
         const height = heights[indexHeight];
         const heightDiff = heightDiffs[indexHeight];
 
+        // Clean the title text so quotes don't break the HTML attribute string
+        const safeTitle = book.title.replace(/'/g, "\\'");
+        // If you have a description property in your book object, use it here instead
+        const safeDesc = (book.description || "No description available").replace(/'/g, "\\'");
+
         container.innerHTML += `
-            <a href="${book.link}" class="book" style="
+            <div class="book"
+            onmouseenter="showPopup('${color}', '${safeTitle}', '${safeDesc}')"
+            onmouseleave="hidePopup()" style="
             --book-color: ${color};
             --border-color: ${border};
             text-decoration: none;
@@ -103,9 +113,25 @@ function displaybooks(books) {
             --height-diff: ${heightDiff};
             ">
                 <h3>${book.title}</h3>
-            </a>
+            </div>
         `;
     });
+}
+
+function showPopup(bookColor) {
+  const popup = document.querySelector('.right-body .popup-box');
+  if (popup) {
+    // Dynamically apply the book's custom color variable to the popup border
+    popup.style.setProperty('--book-color', bookColor);
+    popup.classList.add('active');
+  }
+}
+
+function hidePopup() {
+  const popup = document.querySelector('.right-body .popup-box');
+  if (popup) {
+    popup.classList.remove('active');
+  }
 }
 
 function setupBookSearch() {
