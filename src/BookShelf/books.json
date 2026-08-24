@@ -22,6 +22,61 @@
     "link": "./BookReviews/messiah.html"
   },
   {
+    "title": "Children of Dune",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "./BookReviews/mechanicum.html"
+  },
+  {
+    "title": "A Game of Thrones",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "./BookReviews/mechanicum.html"
+  },
+  {
+    "title": "Atomic Habits",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "./BookReviews/mechanicum.html"
+  },
+  {
+    "title": "Project Hail Merry",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "./BookReviews/mechanicum.html"
+  },
+  {
+    "title": "Legion",
+    "rating": "4.8",
+    "plot": "3",
+    "pacing": "7",
+    "characters":"2",
+    "worldBuilding":"5",
+    "logic":"6",
+    "total":"23",
+    "link": "./BookReviews/mechanicum.html"
+  },
+  {
     "title": "Mechanicum",
     "rating": "4.8",
     "plot": "3",
