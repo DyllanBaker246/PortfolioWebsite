@@ -1,4 +1,4 @@
-fetch("about.md")
+fetch("src/frontend/about.md")
     .then(response => {
         if (!response.ok) {
             throw new Error("Could not load markdown file");
@@ -14,7 +14,7 @@ fetch("about.md")
         console.error(error);
     });
 
-fetch("versionControl.md")
+fetch("src/frontend/versionControl.md")
     .then(response => {
         if (!response.ok) {
             throw new Error("Could not load markdown file");
