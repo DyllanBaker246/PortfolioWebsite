@@ -67,10 +67,13 @@ nav {
   
 .body-2 {
     flex: 2;
+    margin-right: 10px;
 }
   
 .body-3 {
     flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #create-review-button{
