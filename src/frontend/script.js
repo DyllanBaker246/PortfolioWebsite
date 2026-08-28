@@ -30,11 +30,11 @@ fetch("src/frontend/versionControl.md")
         console.error(error);
     });
 
-const button = document.getElementById("button");
+const button = document.getElementById("cryptologyProj");
 
 button.addEventListener("click", function () {
 
-    fetch("src/frontend/versionControl.md")
+    fetch("src/frontend/project-md/cryptoFinal.md")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Could not load markdown file");

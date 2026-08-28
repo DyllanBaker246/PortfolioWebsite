@@ -17,6 +17,30 @@ html, body {
     min-height: 100vh;
 }
 
+#projectList{
+    display:block;
+    list-style-type: none;
+}
+
+button{
+  display: inline;
+  padding: 0;
+  border: 0;
+  font: var(--font);
+  text-decoration: underline;
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary-accent);
+}
+
+button:hover {
+  color: var(--secondary-accent);
+  text-decoration: underline;
+}
+
+button:visited {
+  color: var(--secondary-accent);
+}
 
 body{
     font-family: var(--font);
