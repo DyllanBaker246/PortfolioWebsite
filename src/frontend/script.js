@@ -29,3 +29,25 @@ fetch("src/frontend/versionControl.md")
     .catch(error => {
         console.error(error);
     });
+
+const button = document.getElementById("button");
+
+button.addEventListener("click", function () {
+
+    fetch("src/frontend/versionControl.md")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Could not load markdown file");
+            }
+
+            return response.text();
+        })
+        .then(markdown => {
+            document.getElementById("about").innerHTML =
+                marked.parse(markdown);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+});
