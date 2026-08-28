@@ -22,6 +22,10 @@ html, body {
     list-style-type: none;
 }
 
+#projectList li{
+    margin-bottom: 10px;
+}
+
 button{
   display: inline;
   padding: 0;
@@ -55,6 +59,7 @@ nav {
     background-color: var(--background);
     border-bottom: 2px solid var(--border);
     padding: 10px 20px;
+    display: flex;
 }
 
 .nav-links {

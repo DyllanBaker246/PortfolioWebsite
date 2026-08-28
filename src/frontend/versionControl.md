@@ -1,5 +1,3 @@
->1.0.0 - 8/26/26
->- meows
->- meow
->
->1.0.1
+>1.0.0 - 8/28/26
+>- Set up basic functionality with template for projects
+>- Added: ca, ipsec, pgp, ssh, and vpn
