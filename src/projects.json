@@ -1,6 +1,12 @@
 
 [
   {
+    "title": "Secure File Sharing",
+    "description": "Web-based application that is designed for users to securely store and share files.",
+    "skills": ["AWS", "Flask", "HTML", "CSS", "JavaScript"],
+    "link": "src/Projects/secureFileSharing.html"
+  },
+  {
     "title": "Portfolio Website",
     "description": "A personal portfolio website built with HTML, CSS, and JavaScript.",
     "skills": ["HTML", "CSS", "JavaScript", "Web Dev"],
