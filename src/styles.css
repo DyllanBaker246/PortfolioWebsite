@@ -49,6 +49,7 @@ html {
 #projects {
   /* Match this to the height of whatever header/navbar is blocking it */
   scroll-margin-top: 20px; 
+  
 }
 
 .nav-bar{
