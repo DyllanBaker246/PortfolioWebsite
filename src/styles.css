@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #0b1315;
+    background-color: #142326;
     color: #ecfeff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: oblique;
@@ -152,7 +152,7 @@ html {
     height: 1500px;
     transform: translate(-50%, -50%); /*centers effect on tip of mouse*/
     pointer-events: none; /*stops the effect from blocking interaction*/
-    background: radial-gradient(circle, #304A50 0%, #0b1315 70%);
+    background: radial-gradient(circle, #304A50 0%, #142326 70%);
     border-radius: 50%;
     transition: transform 0.1s ease-out;
     z-index: -1;
